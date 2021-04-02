@@ -1,0 +1,22 @@
+.header {
+  max-width: calc(100vw - 10%);  /*(320px / (16px * 2))) решил побаловаться с калькуляцие и мнесто 10% писал вырожение но css не применяет свойство так как 320пх/32пх будет 10пх а не 10%*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: calc(100vw - 48px); /* не понимаю если 768/48 то будет 16% если поставить 16% то отступы будут 60.45пх вместо положенных 24пх с каждой стороны*/
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    max-width: calc(100vw - 96px);
+  }
+}

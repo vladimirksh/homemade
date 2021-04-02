@@ -1,0 +1,34 @@
+.place {
+  margin: 0 auto;
+  max-width: 100%;
+  padding-bottom: 50px;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .place {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 47% 28px 49%;
+    grid-template-columns: 47% 49%; /*4% для gap*/
+    gap: 0 28px;
+    padding-bottom: 73px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .place {
+    gap: 0 32px;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .place {
+    gap: 0 40px;
+  }
+}
+
+.place:last-child {
+  padding-bottom: 0;
+}
